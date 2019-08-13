@@ -32,7 +32,7 @@ var payload = {
   phone: '6085555454',
   iat: Math.floor(Date.now() / 1000),
   jti: uuid,
-  external_id: 'jwt_sdk_456'
+  external_id: 'jwt_sdk_123'
 };
 
 var token = jwt.sign(payload, process.env.SECRET);
