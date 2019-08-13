@@ -27,12 +27,12 @@ app.post('/', function (req, res) {
   
 var uuid = uuidv1();
 var payload = {
-  name: 'Phone number guy',
-  email: 'phonenumberguy@example.com',
+  name: 'SDK JWT ',
+  email: 'sdk1@example.com',
   phone: '6085555454',
   iat: Math.floor(Date.now() / 1000),
   jti: uuid,
-  external_id: 'slughorn4'
+  external_id: 'jwt_sdk_123'
 };
 
 var token = jwt.sign(payload, process.env.SECRET);
