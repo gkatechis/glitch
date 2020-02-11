@@ -28,7 +28,7 @@ app.post('/', function (req, res) {
 var uuid = uuidv1();
 var payload = {
   name: 'SDK JWT new guy ',
-  email: 'sdk@example.com',
+  email: 'test@test.testing',
   phone: '6085555454',
   iat: Math.floor(Date.now() / 1000),
   jti: uuid,
