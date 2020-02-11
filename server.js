@@ -31,8 +31,7 @@ var payload = {
   email: 'test@test.testing',
   phone: '6085555454',
   iat: Math.floor(Date.now() / 1000),
-  jti: uuid,
-  external_id: 'jwt_sdk_123'
+  jti: uuid
 };
 
 var token = jwt.sign(payload, process.env.SECRET);
